@@ -1,0 +1,30 @@
+<html>
+<meta charset="UTF-8"/>
+<body>
+<iframe src="MENU.php" width=100% height=10%>
+texto en marco 1
+</iframe>
+<iframe src="LATERAL.PHP" width=15% height=80%>
+texto en marco 2
+</iframe>
+<!-- <?php -->
+	<!-- if($_SESSION[logeado]==1) { -->
+		<!-- echo "<iframe src='PEDIDOS.php' width=70% height=80% id='contenedor' name='contenedor'>texto en marco 3</iframe>"; -->
+		<!-- } -->
+	<!-- elseif ($_SESSION[logeado]==0){ -->
+		<!-- echo "<iframe src='VISTA.php' width=70% height=80% id='contenedor' name='contenedor'>texto en marco 4 </iframe>"; -->
+		<!-- } -->
+<!-- ?> -->
+<?php
+	
+	echo "<iframe src=$_SESSION[logeado] width=70% height=80% id='contenedor' name='contenedor'>texto en marco 3</iframe>";
+?>
+<iframe src="LOGIN.php" width=13% height=80% name="login">
+texto en marco 4
+</iframe>
+<iframe src="https://desarrolloweb.com/articulos/etiqueta-iframe.html" 
+width=100% height=7%>
+texto en marco 1
+</iframe>
+</body>
+</html>
